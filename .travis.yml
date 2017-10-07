@@ -9,3 +9,5 @@ jobs:
       script: ./gradlew generatePomFileForBintrayPublicationPublication
     - stage: deploy
       script: ./gradlew -Pbintray-user=${bintrayUser} -Pbintray-key=${bintrayKey} bintrayUpload -x clean
+
+
